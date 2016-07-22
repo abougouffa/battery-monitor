@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Battery-monitor by maateen</title>
+    <title>Battery Monitor by maateen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,8 +11,8 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Battery-monitor</h1>
-      <h2 class="project-tagline">It&#39;s a Python3 script which will notify user about charging, discharging and not charging state of the battery on Linux. It&#39;s using PyGtk3 for notification.</h2>
+      <h1 class="project-name">Battery Monitor</h1>
+      <h2 class="project-tagline">Battery Monitor is a utility tool developed on Python3 and PyGtk3. It will notify user about charging, discharging and not charging state of the battery on Linux (Surely if battery is present).</h2>
       <a href="https://github.com/maateen/battery-monitor" class="btn">View on GitHub</a>
       <a href="https://github.com/maateen/battery-monitor/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/maateen/battery-monitor/tarball/master" class="btn">Download .tar.gz</a>
@@ -20,24 +20,86 @@
 
     <section class="main-content">
       <h1>
-<a id="battery-monitor" class="anchor" href="#battery-monitor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>battery-monitor</h1>
+<a id="battery-monitor" class="anchor" href="#battery-monitor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Battery Monitor</h1>
 
-<p>It's a Python3 script which will notify user about charging, discharging and not charging state of the battery on Linux. It's using PyGtk3 for notification.</p>
+<p>Battery Monitor is a utility tool developed on Python3 and PyGtk3. It will notify user about charging, discharging and not charging state of the battery on Linux (Surely if battery is present). </p>
 
-<pre><code>wget https://github.com/maateen/battery-monitor/releases/download/v0.1/battery-monitor_0.1_all.deb
-sudo dpkg -i battery-monitor_0.1_all.deb
-sudo apt install -f
-</code></pre>
+<h2>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dependencies</h2>
 
-<p>Now press <strong>alt+f2</strong> and run <code>battery-monitor</code> command. That's all.</p>
+<ul>
+<li>python3</li>
+<li>python3-gi</li>
+<li>libnotify-dev</li>
+<li>acpi</li>
+</ul>
+
+<p>To use <strong>Battery Monitor</strong> you need these dependencies installed on your PC.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
 
 <h3>
-<a id="issue-tracking" class="anchor" href="#issue-tracking" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Issue Tracking</h3>
+<a id="ubuntudebian" class="anchor" href="#ubuntudebian" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ubuntu/Debian</h3>
 
-<p>If you find a bug, open a new issue: <a href="https://github.com/maateen/battery-monitor/issues">https://github.com/maateen/battery-monitor/issues</a></p>
+<ul>
+<li>At first, we will install all dependencies. Let's play the command:</li>
+</ul>
+
+<pre><code>sudo apt-get install python3 python3-gi libnotify-dev acpi -y
+</code></pre>
+
+<ul>
+<li>Now we will download the latest version of <strong>Battery Monitor</strong> from GitHub.</li>
+</ul>
+
+<pre><code>wget https://github.com/maateen/battery-monitor/releases/download/v0.1/battery-monitor_0.1_all.deb
+</code></pre>
+
+<ul>
+<li>Let's install it with <code>dpkg</code> (hope you already got it):</li>
+</ul>
+
+<pre><code>sudo dpkg -i battery-monitor_0.1_all.deb
+</code></pre>
+
+<p>That's all. <strong>Battery Monitor</strong> is installed on your system. </p>
+
+<h2>
+<a id="configuration" class="anchor" href="#configuration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Configuration</h2>
+
+<p>Every time, you will start/restart your PC, it will run automatically in background. But as it's your first time, let's start it by yourself. <code>battery-monitor</code> is the relevant command, you can use on Terminal to start the <strong>Battery Monitor</strong>. Surely, I have a different idea. Just press <strong>alt+f2</strong>, <code>battery-monitor</code> command in the box and press <code>enter</code>. That's all.</p>
+
+<h2>
+<a id="issue-tracking" class="anchor" href="#issue-tracking" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Issue Tracking</h2>
+
+<p>If you find a bug, please open a new issue with details: <a href="https://github.com/maateen/battery-monitor/issues">https://github.com/maateen/battery-monitor/issues</a></p>
+
+<h2>
+<a id="screenshots" class="anchor" href="#screenshots" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Screenshots</h2>
+
+<h4>
+<a id="initial-state" class="anchor" href="#initial-state" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Initial State</h4>
+
+<p><img src="https://s20.postimg.org/6xltz5ox9/Screenshot_from_2016_07_22_20_42_29.png" alt="Initial State"></p>
+
+<h4>
+<a id="charging-state" class="anchor" href="#charging-state" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Charging State</h4>
+
+<p><img src="https://s20.postimg.org/qpnzyg0h9/Screenshot_from_2016_07_22_20_42_52.png" alt="Charging State"></p>
+
+<h4>
+<a id="discharging-state" class="anchor" href="#discharging-state" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Discharging State</h4>
+
+<p><img src="https://s20.postimg.org/afxtvjpt9/Screenshot_from_2016_07_22_20_42_42.png" alt="Discharging State"></p>
+
+<h4>
+<a id="not-charging-state" class="anchor" href="#not-charging-state" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Not Charging State</h4>
+
+<p><img src="https://s20.postimg.org/aihpidtgt/Screenshot_from_2016_07_22_21_11_49.png" alt="Not Charging State"></p>
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/maateen/battery-monitor">Battery-monitor</a> is maintained by <a href="https://github.com/maateen">maateen</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/maateen/battery-monitor">Battery Monitor</a> is maintained by <a href="https://github.com/maateen">maateen</a>.</span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
