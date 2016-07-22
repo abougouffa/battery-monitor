@@ -1,0 +1,6 @@
+{
+  "name": "Battery-monitor",
+  "tagline": "It's a Python3 script which will notify user about charging, discharging and not charging state of the battery on Linux. It's using PyGtk3 for notification.",
+  "body": "# battery-monitor\r\nIt's a Python3 script which will notify user about charging, discharging and not charging state of the battery on Linux. It's using PyGtk3 for notification.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
