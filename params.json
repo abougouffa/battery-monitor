@@ -1,6 +1,6 @@
 {
   "name": "Battery-monitor",
   "tagline": "It's a Python3 script which will notify user about charging, discharging and not charging state of the battery on Linux. It's using PyGtk3 for notification.",
-  "body": "# battery-monitor\r\nIt's a Python3 script which will notify user about charging, discharging and not charging state of the battery on Linux. It's using PyGtk3 for notification.\r\n",
+  "body": "# battery-monitor\r\nIt's a Python3 script which will notify user about charging, discharging and not charging state of the battery on Linux. It's using PyGtk3 for notification.\r\n\r\n```\r\nwget https://github.com/maateen/battery-monitor/releases/download/v0.1/battery-monitor_0.1_all.deb\r\nsudo dpkg -i battery-monitor_0.1_all.deb\r\nsudo apt install -f\r\n```\r\nNow press **alt+f2** and run `battery-monitor` command. That's all.\r\n###Issue Tracking\r\nIf you find a bug, open a new issue: [https://github.com/maateen/battery-monitor/issues](https://github.com/maateen/battery-monitor/issues)",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
