@@ -42,25 +42,15 @@
 <h3>
 <a id="ubuntudebian" class="anchor" href="#ubuntudebian" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ubuntu/Debian</h3>
 
-<ul>
-<li>At first, we will install all dependencies. Let's play the command:</li>
-</ul>
+<p>Let's install from PPA:</p>
 
-<pre><code>sudo apt-get install python3 python3-gi libnotify-dev acpi -y
+<pre><code>sudo add-apt-repository ppa:maateen/battery-monitor -y
 </code></pre>
 
-<ul>
-<li>Now we will download the latest version of <strong>Battery Monitor</strong> from GitHub.</li>
-</ul>
-
-<pre><code>wget https://github.com/maateen/battery-monitor/releases/download/v0.2/battery-monitor_0.2_all.deb
+<pre><code>sudo apt-get update
 </code></pre>
 
-<ul>
-<li>Let's install it with <code>dpkg</code> (hope you already got it):</li>
-</ul>
-
-<pre><code>sudo dpkg -i battery-monitor_0.2_all.deb
+<pre><code>sudo apt-get install battery-monitor -y
 </code></pre>
 
 <p>That's all. <strong>Battery Monitor</strong> is installed on your system. </p>
