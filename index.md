@@ -37,6 +37,11 @@ If you find a bug, please open a new issue with details: [https://github.com/maa
 ![Not Charging State](https://raw.githubusercontent.com/maateen/battery-monitor/gh-pages/Screenshot_from_2016_07_22_21_11_49.png)
 ####Critically Low Battery State
 ![Critically Low Battery State](https://raw.githubusercontent.com/maateen/battery-monitor/gh-pages/Screenshot_from_2016_07_23_03_09_54.png)
+## Roadmap
+- Rewriting some parts, specially the battery checker loop in C.
+- Developing a GUI to manage the custom warning easily.
+- Minizming CPU consuming below 0.1%.
+- Adding PPA support for new Ubuntu releases.
 ##Changelog
 ###v.04
 - Reformatting the code in a new style.
