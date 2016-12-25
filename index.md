@@ -2,6 +2,21 @@
 
 Battery Monitor is a utility tool developed on Python3 and PyGtk3. It will notify user about charging, discharging, not charging and critically low battery state of the battery on Linux (Surely if battery is present). 
 
+ - [Dependencies](#dependencies)
+ - [Installation](#installation)
+	 - [Ubuntu/Debian](#ubuntudebian)
+ - [Configuration](#configuration)
+ - [Issue Tracking](#issue-tracking)
+ - [Screenshots](#screenshots)
+	 - [Initial State](#initial-state)
+	 - [Charging State](#charging-state)
+	 - [Discharging State](#discharging-state)
+	 - [Not Charging State](#not-charging-state)
+	 - [Critically Low Battery State](#critically-low-battery-state)
+ - [Roadmap](#roadmap)
+ - [Changelog](#changelog)
+ - [Contributors](#contributors)
+
 ## Dependencies
 
 * python3
